@@ -27,4 +27,6 @@ defined('MOODLE_INTERNAL') || die;
 $plugin->version   = 2014012000;            // The current plugin version (Date: YYYYMMDDXX)
 $plugin->requires  = 2013050100;            // Requires this Moodle version
 $plugin->component = 'local_userinfosync';  // Full name of the plugin (used for diagnostics)
+$plugin->maturity  = MATURITY_STABLE;       // Maturity 
+$plugin->release   = '2.5';                 // Release for Moodle 2.5
 $plugin->cron	   = 1;                     // Cronjob interval in seconds
