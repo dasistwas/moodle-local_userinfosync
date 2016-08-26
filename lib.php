@@ -30,7 +30,7 @@ class userinfosync_crypt {
     private $privatekeyres;
     private $publickeyres;
 
-    public function userinfosync_crypt() {
+    public function __construct() {
         $keypair = unserialize(get_config('userinfosync', 'resource'));
         if (!$keypair) {
             $resource = openssl_pkey_new();
